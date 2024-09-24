@@ -15,7 +15,7 @@ void main()
 	vec3 pos = position * (cos(time)*0.5f+0.6f);
 	vertex_pos = position.xy;	//pour que le cercle devienne pas juste blanc quand il est petit
 	//vertex_pos = pos.xy;		//comme l'exemple
-	pos.x += sin(time)*0.9f;
+	pos.x += sin(2*time)*0.9f;
 	pos.y += cos(time)*0.9f;
 
 	gl_Position = vec4(pos, 1.0);
